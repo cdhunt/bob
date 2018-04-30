@@ -23,6 +23,6 @@ function Write-BuilderResults {
     )
 
     process {
-        $_.GetResults() | Write-Output
+        $_.GetResult() | Write-Output
     }
 }
