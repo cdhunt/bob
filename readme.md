@@ -44,3 +44,7 @@ Stages
 ------
 {Clean, Copy, Test}
 ```
+
+:warning: Please don't pay much attention to the names of things.
+This is not meant to be an example of a well-formed modules.
+You probably won't win any scripting games by copying the structure of this module.
