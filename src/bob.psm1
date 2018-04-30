@@ -43,6 +43,9 @@ class Copy : Stage {
         $J.LogHeader($this.GetHeader())
 
         Get-ChildItem -Path $J.Source | ForEach-Object {
+            if (!(Test-Path -Path $J.Destination)) {
+                New-Item -ItemType Directory -Path $J.Destination
+            }
             $_ | Copy-Item -Destination $J.Destination -ErrorAction Stop -Recurse
             $J.LogEntry("+ {0}" -f (Resolve-Path (Join-Path -Path $J.Destination -ChildPath $_.Name) ))
         }
