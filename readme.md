@@ -43,6 +43,13 @@ BuildJob src dst {
 Stages
 ------
 {Clean, Copy, Test}
+
+# YAML Config
+PS> New-BuildFromYaml .\build.yaml | Select stages
+
+Stages
+------
+{Clean, Copy, Test}
 ```
 
 :warning: Please don't pay much attention to the names of things.
