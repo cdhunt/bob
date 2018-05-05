@@ -136,6 +136,7 @@ $global:BUILDER = New-Object -TypeName Object
 . $PSScriptRoot\Invoke-Builder.ps1
 . $PSScriptRoot\Write-BuilderResults.ps1
 . $PSScriptRoot\DSL.ps1
+. $PSScriptRoot\New-BuildFromYaml.ps1
 
 # Aliases
 if (!(Get-Alias -Name :Clean -ErrorAction SilentlyContinue)) { New-Alias -Name :Clean -Value Add-StageClean }

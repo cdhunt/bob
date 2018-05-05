@@ -1,0 +1,7 @@
+build:
+  source: .\src
+  output: .\output\bob
+  stages:
+    - clean
+    - copy
+    - test
